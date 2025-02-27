@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee Effect</title>
+    <!-- Link to Google Fonts for Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        #node-marquee {
+            background-color: #FFFFFF;
+            color: #000000; /* Added '#' for the color */
+            font-size: 30px;
+            overflow: hidden;
+            white-space: nowrap; /* Prevent line breaks */
+            font-family: 'Inter', sans-serif; /* Apply the Inter font */
+        }
+        #node-marquee span {
+            display: inline-block;
+            white-space: nowrap; 
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/node-marquee@3.0.6/build/cdn/index.min.js"></script>
+</head>
+<body>
+    <div id="node-marquee">
+        <span>WELCOME TO MY PORTFOLIO | FOLLOW FOR MORE UPDATES | ENJOY WATCHING |</span>
+    </div>
+    <script>
+        nodeMarquee({
+            parent: '#node-marquee',
+            speed: 1
+        });
+    </script>
+</body>
+</html>
